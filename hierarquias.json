@@ -1,0 +1,458 @@
+{
+ "name": "world",
+ "children": [
+  {
+   "name": "africa",
+   "children": [
+    {
+     "name": "easternAfrica",
+     "children": [
+      {"name": "Bassas da India", "code": "BS", "lat": -212500, "lon": 394200, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Burundi", "code": "BY", "lat": -33000, "lon": 300000, "color": "#c86800", "area": 25680, "pop": 10114505},
+      {"name": "Comoros", "code": "CN", "lat": -121000, "lon": 441500, "color": "#c86800", "area": 1862, "pop": 806153},
+      {"name": "Djibouti", "code": "DJ", "lat": 113000, "lon": 423000, "color": "#c86800", "area": 23180, "pop": 900},
+      {"name": "Eritrea", "code": "ER", "lat": 150000, "lon": 390000, "color": "#c86800", "area": 101000, "pop": 5352000},
+      {"name": "Ethiopia", "code": "ET", "lat": 80000, "lon": 380000, "color": "#c86800", "area": 1000000, "pop": 101853000},
+      {"name": "Europa Island", "code": "EU", "lat": -222000, "lon": 402200, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Glorioso Islands", "code": "GO", "lat": -113000, "lon": 472000, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Juan de Nova Island", "code": "JU", "lat": -170330, "lon": 424300, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Kenya", "code": "KE", "lat": 10000, "lon": 380000, "color": "#c86800", "area": 569140, "pop": 47251000},
+      {"name": "Madagascar", "code": "MA", "lat": -200000, "lon": 470000, "color": "#c86800", "area": 581540, "pop": 22434363},
+      {"name": "Mauritius", "code": "MP", "lat": -201800, "lon": 573500, "color": "#c86800", "area": 2030, "pop": 1263747},
+      {"name": "Mayotte", "code": "MF", "lat": -125000, "lon": 451000, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Reunion", "code": "RE", "lat": -210600, "lon": 553600, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Rwanda", "code": "RW", "lat": -20000, "lon": 300000, "color": "#c86800", "area": 24668, "pop": 11553188},
+      {"name": "Seychelles", "code": "SE", "lat": -43500, "lon": 554000, "color": "#c86800", "area": 455, "pop": 93144},
+      {"name": "Somalia", "code": "SO", "lat": 60000, "lon": 480000, "color": "#c86800", "area": 627337, "pop": 11079000},
+      {"name": "South Sudan", "code": "OD", "lat": 80000, "lon": 300000, "color": "#c86800", "area": 619745, "pop": 12131000},
+      {"name": "Tanzania", "code": "TZ", "lat": -60000, "lon": 350000, "color": "#c86800", "area": 885800, "pop": 55155000},
+      {"name": "Tromelin Island", "code": "TE", "lat": -155200, "lon": 542500, "color": "#c86800", "area": 0, "pop": 0},
+      {"name": "Uganda", "code": "UG", "lat": 20000, "lon": 330000, "color": "#c86800", "area": 197100, "pop": 36860700}
+     ]
+    },
+    {
+     "name": "middleAfrica",
+     "children": [
+      {"name": "Cameroon", "code": "CM", "lat": 60000, "lon": 120000, "color": "#d79753", "area": 472710, "pop": 22709892},
+      {"name": "Central African Republic", "code": "CT", "lat": 70000, "lon": 210000, "color": "#d79753", "area": 622984, "pop": 4998000},
+      {"name": "Chad", "code": "CD", "lat": 150000, "lon": 190000, "color": "#d79753", "area": 1259200, "pop": 14497000},
+      {"name": "Democratic Republic of the Congo", "code": "CG", "lat": 0, "lon": 250000, "color": "#d79753", "area": 2267048, "pop": 85110000},
+      {"name": "Equatorial Guinea", "code": "EK", "lat": 20000, "lon": 100000, "color": "#d79753", "area": 28051, "pop": 1222442},
+      {"name": "Gabon", "code": "GB", "lat": -10000, "lon": 114500, "color": "#d79753", "area": 257667, "pop": 1802278},
+      {"name": "Republic of the Congo", "code": "CF", "lat": -10000, "lon": 150000, "color": "#d79753", "area": 341500, "pop": 4741000}
+     ]
+    },
+    {
+     "name": "northernAfrica",
+     "children": [
+      {"name": "Algeria", "code": "AG", "lat": 280000, "lon": 30000, "color": "#ef830e", "area": 2381741, "pop": 40400000},
+      {"name": "Egypt", "code": "EG", "lat": 270000, "lon": 300000, "color": "#ef830e", "area": 995450, "pop": 91938400},
+      {"name": "Libya", "code": "LY", "lat": 250000, "lon": 170000, "color": "#ef830e", "area": 1759540, "pop": 6385000},
+      {"name": "Morocco", "code": "MO", "lat": 320000, "lon": -50000, "color": "#ef830e", "area": 446300, "pop": 34140000},
+      {"name": "Sudan", "code": "SU", "lat": 160000, "lon": 300000, "color": "#ef830e", "area": 1886068, "pop": 41176000},
+      {"name": "Tunisia", "code": "TS", "lat": 340000, "lon": 90000, "color": "#ef830e", "area": 155360, "pop": 11154400},
+      {"name": "Western Sahara", "code": "WI", "lat": 250000, "lon": -133000, "color": "#ef830e", "area": 266, "pop": 584}
+     ]
+    },
+    {
+     "name": "southernAfrica",
+     "children": [
+      {"name": "Angola", "code": "AO", "lat": -123000, "lon": 183000, "color": "#a55a0a", "area": 1246700, "pop": 25789024},
+      {"name": "Botswana", "code": "BC", "lat": -220000, "lon": 240000, "color": "#a55a0a", "area": 566730, "pop": 2230905},
+      {"name": "Lesotho", "code": "LT", "lat": -293000, "lon": 281500, "color": "#a55a0a", "area": 30355, "pop": 1916000},
+      {"name": "Malawi", "code": "MI", "lat": -133000, "lon": 340000, "color": "#a55a0a", "area": 94080, "pop": 16832910},
+      {"name": "Mozambique", "code": "MZ", "lat": -181500, "lon": 350000, "color": "#a55a0a", "area": 786380, "pop": 26423700},
+      {"name": "Namibia", "code": "WA", "lat": -220000, "lon": 170000, "color": "#a55a0a", "area": 823290, "pop": 2324388},
+      {"name": "South Africa", "code": "SF", "lat": -300000, "lon": 260000, "color": "#a55a0a", "area": 1214470, "pop": 55908000},
+      {"name": "Swaziland", "code": "WZ", "lat": -263000, "lon": 313000, "color": "#a55a0a", "area": 17204, "pop": 1132657},
+      {"name": "Zambia", "code": "ZA", "lat": -150000, "lon": 300000, "color": "#a55a0a", "area": 743398, "pop": 15933883},
+      {"name": "Zimbabwe", "code": "ZI", "lat": -190000, "lon": 290000, "color": "#a55a0a", "area": 386847, "pop": 14240168}
+     ]
+    },
+    {
+     "name": "westernAfrica",
+     "children": [
+      {"name": "Ascension", "code": "SH", "lat": -155700, "lon": -54200, "color": "#f5b167", "area": 0, "pop": 0},
+      {"name": "Benin", "code": "BN", "lat": 93000, "lon": 21500, "color": "#f5b167", "area": 114305, "pop": 10653654},
+      {"name": "Burkina Faso", "code": "UV", "lat": 130000, "lon": -20000, "color": "#f5b167", "area": 273602, "pop": 19034397},
+      {"name": "Cape Verde", "code": "CV", "lat": 160000, "lon": -240000, "color": "#f5b167", "area": 4033, "pop": 531239},
+      {"name": "Cote d'Ivoire", "code": "IV", "lat": 80000, "lon": -50000, "color": "#f5b167", "area": 318003, "pop": 22671331},
+      {"name": "Gambia", "code": "GA", "lat": 133000, "lon": -153000, "color": "#f5b167", "area": 10000, "pop": 1882450},
+      {"name": "Ghana", "code": "GH", "lat": 80000, "lon": -20000, "color": "#f5b167", "area": 227533, "pop": 28308301},
+      {"name": "Guinea", "code": "GV", "lat": 110000, "lon": -100000, "color": "#f5b167", "area": 245717, "pop": 12947000},
+      {"name": "Guinea-Bissau", "code": "PU", "lat": 120000, "lon": -150000, "color": "#f5b167", "area": 28120, "pop": 1547777},
+      {"name": "Liberia", "code": "LI", "lat": 63000, "lon": -93000, "color": "#f5b167", "area": 96320, "pop": 4076530},
+      {"name": "Mali", "code": "ML", "lat": 170000, "lon": -40000, "color": "#f5b167", "area": 1220190, "pop": 18341000},
+      {"name": "Mauritania", "code": "MR", "lat": 200000, "lon": -120000, "color": "#f5b167", "area": 1025520, "pop": 3718678},
+      {"name": "Niger", "code": "NG", "lat": 160000, "lon": 80000, "color": "#f5b167", "area": 1266700, "pop": 20715000},
+      {"name": "Nigeria", "code": "NI", "lat": 100000, "lon": 80000, "color": "#f5b167", "area": 910768, "pop": 186987000},
+      {"name": "Sao Tome and Principe", "code": "TP", "lat": 10000, "lon": 70000, "color": "#f5b167", "area": 964, "pop": 187356},
+      {"name": "Senegal", "code": "SG", "lat": 140000, "lon": -140000, "color": "#f5b167", "area": 192530, "pop": 14799859},
+      {"name": "Sierra Leone", "code": "SL", "lat": 83000, "lon": -113000, "color": "#f5b167", "area": 7162, "pop": 7075641},
+      {"name": "Togo", "code": "TO", "lat": 80000, "lon": 11000, "color": "#f5b167", "area": 54385, "pop": 7143000}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "america",
+   "children": [
+    {
+     "name": "caribbean",
+     "children": [
+      {"name": "Anguilla", "code": "AV", "lat": 181300, "lon": -630300, "color": "#21632e", "area": 91, "pop": 13452},
+      {"name": "Antigua and Barbuda", "code": "AC", "lat": 170300, "lon": -614800, "color": "#21632e", "area": 443, "pop": 86295},
+      {"name": "Aruba", "code": "AA", "lat": 123000, "lon": -695800, "color": "#21632e", "area": 180, "pop": 110108},
+      {"name": "Bahamas", "code": "BF", "lat": 240000, "lon": -760000, "color": "#21632e", "area": 10010, "pop": 37804},
+      {"name": "Barbados", "code": "BB", "lat": 131000, "lon": -593200, "color": "#21632e", "area": 431, "pop": 285},
+      {"name": "Bermuda", "code": "BD", "lat": 322000, "lon": -644500, "color": "#21632e", "area": 54, "pop": 61954},
+      {"name": "Bonaire", "code": "NT", "lat": 121200, "lon": -681500, "color": "#21632e", "area": 294, "pop": 18905},
+      {"name": "British Virgin Islands", "code": "VI", "lat": 183000, "lon": -643000, "color": "#21632e", "area": 151, "pop": 28514},
+      {"name": "Cayman Islands", "code": "CJ", "lat": 193000, "lon": -804000, "color": "#21632e", "area": 264, "pop": 60413},
+      {"name": "Cuba", "code": "CU", "lat": 220000, "lon": -793000, "color": "#21632e", "area": 109820, "pop": 11239004},
+      {"name": "Curaçao", "code": "UC", "lat": 121000, "lon": -690000, "color": "#21632e", "area": 444, "pop": 158986},
+      {"name": "Dominica", "code": "DO", "lat": 153000, "lon": -612000, "color": "#21632e", "area": 751, "pop": 71293},
+      {"name": "Dominican Republic", "code": "DR", "lat": 190000, "lon": -704000, "color": "#21632e", "area": 48320, "pop": 10075045},
+      {"name": "Grenada", "code": "GJ", "lat": 120700, "lon": -614000, "color": "#21632e", "area": 344, "pop": 103328},
+      {"name": "Guadeloupe", "code": "GP", "lat": 161500, "lon": -613500, "color": "#21632e", "area": 0, "pop": 0},
+      {"name": "Haiti", "code": "HA", "lat": 190000, "lon": -722500, "color": "#21632e", "area": 2756, "pop": 11078033},
+      {"name": "Jamaica", "code": "JM", "lat": 181500, "lon": -773000, "color": "#21632e", "area": 10831, "pop": 2723246},
+      {"name": "Martinique", "code": "MB", "lat": 144000, "lon": -610000, "color": "#21632e", "area": 0, "pop": 0},
+      {"name": "Montserrat", "code": "MH", "lat": 164500, "lon": -621200, "color": "#21632e", "area": 102, "pop": 4922},
+      {"name": "Puerto Rico", "code": "PR", "lat": 181454, "lon": -663000, "color": "#21632e", "area": 9104, "pop": 3474182},
+      {"name": "Saint Barthelemy", "code": "TB", "lat": 175400, "lon": -625000, "color": "#21632e", "area": 0, "pop": 9417},
+      {"name": "Saint Kitts and Nevis", "code": "SC", "lat": 172000, "lon": -624500, "color": "#21632e", "area": 261, "pop": 46204},
+      {"name": "Saint Lucia", "code": "ST", "lat": 135300, "lon": -605800, "color": "#21632e", "area": 606, "pop": 186},
+      {"name": "Saint Martin", "code": "RN", "lat": 180430, "lon": -630330, "color": "#21632e", "area": 54, "pop": 36457},
+      {"name": "Saint Vincent and the Grenadines", "code": "VC", "lat": 130500, "lon": -611200, "color": "#21632e", "area": 389, "pop": 109991},
+      {"name": "Sint Maarten", "code": "NN", "lat": 180230, "lon": -630400, "color": "#21632e", "area": 34, "pop": 38247},
+      {"name": "Trinidad and Tobago", "code": "TD", "lat": 110000, "lon": -610000, "color": "#21632e", "area": 5128, "pop": 1349667},
+      {"name": "Turks and Caicos Islands", "code": "TK", "lat": 214400, "lon": -713500, "color": "#21632e", "area": 430, "pop": 31458},
+      {"name": "US Virgin Islands", "code": "VI", "lat": 182054, "lon": -645901, "color": "#21632e", "area": 346, "pop": 106}
+     ]
+    },
+    {
+     "name": "centralAmerica",
+     "children": [
+      {"name": "Belize", "code": "BH", "lat": 171500, "lon": -884500, "color": "#518b55", "area": 22806, "pop": 375909},
+      {"name": "Clipperton Island", "code": "IP", "lat": 101700, "lon": -1091300, "color": "#518b55", "area": 6, "pop": 0},
+      {"name": "Costa Rica", "code": "CS", "lat": 100000, "lon": -840000, "color": "#518b55", "area": 51060, "pop": 4890379},
+      {"name": "El Salvador", "code": "ES", "lat": 135000, "lon": -885500, "color": "#518b55", "area": 20721, "pop": 6520675},
+      {"name": "Guatemala", "code": "GT", "lat": 153000, "lon": -901500, "color": "#518b55", "area": 107159, "pop": 16176133},
+      {"name": "Honduras", "code": "HO", "lat": 150000, "lon": -863000, "color": "#518b55", "area": 111890, "pop": 8721014},
+      {"name": "Nicaragua", "code": "NU", "lat": 130000, "lon": -850000, "color": "#518b55", "area": 119990, "pop": 6262703},
+      {"name": "Panama", "code": "PM", "lat": 90000, "lon": -800000, "color": "#518b55", "area": 74340, "pop": 3814672}
+     ]
+    },
+    {
+     "name": "northAmerica",
+     "children": [
+      {"name": "Canada", "code": "CA", "lat": 600000, "lon": -960000, "color": "#22a430", "area": 9093507, "pop": 36361700},
+      {"name": "Greenland", "code": "GL", "lat": 720000, "lon": -400000, "color": "#22a430", "area": 2166086, "pop": 56186},
+      {"name": "Mexico", "code": "MX", "lat": 230000, "lon": -1020000, "color": "#22a430", "area": 1943945, "pop": 122273000},
+      {"name": "Saint Pierre and Miquelon", "code": "SB", "lat": 465000, "lon": -562000, "color": "#22a430", "area": 242, "pop": 6286},
+      {"name": "United States", "code": "US", "lat": 394941, "lon": -983446, "color": "#22a430", "area": 9147643, "pop": 324925000}
+     ]
+    },
+    {
+     "name": "southAmerica",
+     "children": [
+      {"name": "Argentina", "code": "AR", "lat": -340000, "lon": -640000, "color": "#2ac739", "area": 2736690, "pop": 43850000},
+      {"name": "Bolivia", "code": "BL", "lat": -170000, "lon": -650000, "color": "#2ac739", "area": 1083301, "pop": 10985059},
+      {
+	   "name": "Brazil", "code": "BR", "lat": -100000, "lon": -550000, "color": "#2ac739", "area": 8460415, "pop": 206946000,
+	   "children": [
+	   	{"name": "centroOeste",
+		 "children": [
+		  {"name": "Distrito Federal", "code": "DF", "area": 5780, "pop": 2977216},
+		  {"name": "Goiás", "code": "GO", "area": 340112, "pop": 6695855},
+		  {"name": "Mato Grosso", "code": "MT", "area": 903366, "pop": 3305531},
+		  {"name": "Mato Grosso do Sul", "code": "MS", "area": 357146, "pop": 2682386}
+		 ]
+		},
+	   	{"name": "Nordeste",
+		 "children": [
+		  {"name": "Alagoas", "code": "AL", "area": 27779, "pop": 3358963},
+		  {"name": "Bahia", "code": "BA", "area": 564733, "pop": 15276566},
+		  {"name": "Ceará", "code": "CE", "area": 148920, "pop": 8980879},
+		  {"name": "Maranhão", "code": "MA", "area": 331937, "pop": 6954036},
+		  {"name": "Paraíba", "code": "PB", "area": 56585, "pop": 3999415},
+		  {"name": "Pernambuco", "code": "PE", "area": 98312, "pop": 9410336},
+		  {"name": "Piauí", "code": "PI", "area": 251578, "pop": 3212180},
+		  {"name": "Rio Grande do Norte", "code": "RN", "area": 52811, "pop": 3474998},
+		  {"name": "Sergipe", "code": "SE", "area": 21915, "pop": 2265779}
+		 ]
+		},
+	   	{"name": "Norte",
+		 "children": [
+		  {"name": "Acre", "code": "AC", "area": 164123, "pop": 816687},
+		  {"name": "Amapá", "code": "AP", "area": 142829, "pop": 782295},
+		  {"name": "Amazonas", "code": "AM", "area": 1559159, "pop": 4001667},
+		  {"name": "Pará", "code": "PA", "area": 1247955, "pop": 8272724},
+		  {"name": "Rondônia", "code": "RO", "area": 237591, "pop": 1787279},
+		  {"name": "Roraima", "code": "RR", "area": 224301, "pop": 514229},
+		  {"name": "Tocantins", "code": "TO", "area": 277721, "pop": 1523902}
+		 ]
+		},
+	   	{"name": "Sudeste",
+		 "children": [
+		  {"name": "Espírito Santo", "code": "ES", "area": 46096, "pop": 3973697},
+		  {"name": "Minas Gerais", "code": "MG", "area": 586522, "pop": 21024678},
+		  {"name": "Rio de Janeiro", "code": "RJ", "area": 43780, "pop": 16690709},
+		  {"name": "São Paulo", "code": "SP", "area": 248222, "pop": 44846530}
+		 ]
+		},
+	   	{"name": "Sul",
+		 "children": [
+		  {"name": "Paraná", "code": "PR", "area": 199308, "pop": 11242720},
+		  {"name": "Rio Grande do Sul", "code": "RS", "area": 281730, "pop": 11286500},
+		  {"name": "Santa Catarina", "code": "SC", "area": 95736, "pop": 6910553}
+		 ]
+		}
+	   ]
+	  },
+      {"name": "Chile", "code": "CI", "lat": -300000, "lon": -710000, "color": "#2ac739", "area": 743812, "pop": 18191900},
+      {"name": "Colombia", "code": "CO", "lat": 40000, "lon": -720000, "color": "#2ac739", "area": 1038700, "pop": 48924700},
+      {"name": "Ecuador", "code": "EC", "lat": -20000, "lon": -773000, "color": "#2ac739", "area": 256369, "pop": 16623000},
+      {"name": "Falkland Islands", "code": "FK", "lat": -514500, "lon": -591000, "color": "#2ac739", "area": 12173, "pop": 2563},
+      {"name": "French Guiana", "code": "FG", "lat": 40000, "lon": -530000, "color": "#2ac739", "area": 0, "pop": 0},
+      {"name": "Guyana", "code": "GY", "lat": 50000, "lon": -590000, "color": "#2ac739", "area": 196849, "pop": 7469},
+      {"name": "Paraguay", "code": "PA", "lat": -225936, "lon": -575947, "color": "#2ac739", "area": 397302, "pop": 6854536},
+      {"name": "Peru", "code": "PE", "lat": -100000, "lon": -760000, "color": "#2ac739", "area": 1279996, "pop": 31488700},
+      {"name": "South Georgia and South Sandwich Islands", "code": "SX", "lat": -560000, "lon": -330000, "color": "#2ac739", "area": 3903, "pop": 0},
+      {"name": "Suriname", "code": "NS", "lat": 40000, "lon": -560000, "color": "#2ac739", "area": 156000, "pop": 541638},
+      {"name": "Uruguay", "code": "UY", "lat": -330000, "lon": -560000, "color": "#2ac739", "area": 175015, "pop": 3480222},
+      {"name": "Venezuela", "code": "VE", "lat": 80000, "lon": -660000, "color": "#2ac739", "area": 882050, "pop": 31028700}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "asia",
+   "children": [
+    {
+     "name": "centralAsia",
+     "children": [
+      {"name": "Kazakhstan", "code": "KZ", "lat": 480000, "lon": 680000, "color": "#fdd200", "area": 2699700, "pop": 17753200},
+      {"name": "Kyrgyzstan", "code": "KG", "lat": 410000, "lon": 750000, "color": "#fdd200", "area": 191801, "pop": 6088000},
+      {"name": "Tajikistan", "code": "TI", "lat": 390000, "lon": 710000, "color": "#fdd200", "area": 141510, "pop": 8551000},
+      {"name": "Turkmenistan", "code": "TX", "lat": 400000, "lon": 600000, "color": "#fdd200", "area": 469930, "pop": 4751120},
+      {"name": "Uzbekistan", "code": "UZ", "lat": 414227, "lon": 635057, "color": "#fdd200", "area": 425400, "pop": 31575300}
+     ]
+    },
+    {
+     "name": "easternAsia",
+     "children": [
+      {"name": "China", "code": "CH", "lat": 350000, "lon": 1050000, "color": "#fff508", "area": 9326410, "pop": 1379860000},
+      {"name": "Hong Kong", "code": "HK", "lat": 221500, "lon": 1141000, "color": "#fff508", "area": 1106, "pop": 7346700},
+      {"name": "Japan", "code": "JA", "lat": 360000, "lon": 1380000, "color": "#fff508", "area": 364485, "pop": 126693000},
+      {"name": "Macau", "code": "MC", "lat": 220928, "lon": 1133335, "color": "#fff508", "area": 28, "pop": 6525},
+      {"name": "Mongolia", "code": "MG", "lat": 460000, "lon": 1050000, "color": "#fff508", "area": 1553556, "pop": 3115500},
+      {"name": "North Korea", "code": "KN", "lat": 400000, "lon": 1270000, "color": "#fff508", "area": 120408, "pop": 24213510},
+      {"name": "South Korea", "code": "KS", "lat": 370000, "lon": 1273000, "color": "#fff508", "area": 99909, "pop": 50801405},
+      {"name": "Taiwan", "code": "TW", "lat": 240000, "lon": 1210000, "color": "#fff508", "area": 32260, "pop": 23519518}
+     ]
+    },
+    {
+     "name": "southeasternAsia",
+     "children": [
+      {"name": "Brunei", "code": "BX", "lat": 43000, "lon": 1144000, "color": "#bb8e0b", "area": 5265, "pop": 4119},
+      {"name": "Burma", "code": "BM", "lat": 220000, "lon": 980000, "color": "#bb8e0b", "area": 0, "pop": 0},
+      {"name": "Cambodia", "code": "CB", "lat": 130000, "lon": 1050000, "color": "#bb8e0b", "area": 176515, "pop": 15626444},
+      {"name": "Indonesia", "code": "ID", "lat": -50000, "lon": 1200000, "color": "#bb8e0b", "area": 1811569, "pop": 260581000},
+      {"name": "Laos", "code": "LA", "lat": 180000, "lon": 1050000, "color": "#bb8e0b", "area": 230800, "pop": 6492400},
+      {"name": "Malaysia", "code": "MY", "lat": 23000, "lon": 1123000, "color": "#bb8e0b", "area": 329613, "pop": 31833200},
+      {"name": "Philippines", "code": "RP", "lat": 130000, "lon": 1220000, "color": "#bb8e0b", "area": 298170, "pop": 103313000},
+      {"name": "Singapore", "code": "SN", "lat": 12200, "lon": 1034800, "color": "#bb8e0b", "area": 687, "pop": 5607300},
+      {"name": "Thailand", "code": "TH", "lat": 150000, "lon": 1000000, "color": "#bb8e0b", "area": 510890, "pop": 68145000},
+      {"name": "Timor-Leste", "code": "TT", "lat": -85000, "lon": 1254500, "color": "#bb8e0b", "area": 14874, "pop": 1167242},
+      {"name": "Vietnam", "code": "VM", "lat": 161000, "lon": 1075000, "color": "#bb8e0b", "area": 310070, "pop": 95261000}
+     ]
+    },
+    {
+     "name": "southernAsia",
+     "children": [
+      {"name": "Afghanistan", "code": "AF", "lat": 330000, "lon": 660000, "color": "#c1bc3b", "area": 652230, "pop": 27657145},
+      {"name": "Bangladesh", "code": "BG", "lat": 240000, "lon": 900000, "color": "#c1bc3b", "area": 130168, "pop": 161424000},
+      {"name": "Bhutan", "code": "BT", "lat": 273000, "lon": 903000, "color": "#c1bc3b", "area": 38394, "pop": 78023},
+      {"name": "British Indian Ocean Territory", "code": "IO", "lat": -60000, "lon": 720000, "color": "#c1bc3b", "area": 60, "pop": 0},
+      {"name": "India", "code": "IN", "lat": 200000, "lon": 770000, "color": "#c1bc3b", "area": 2864021, "pop": 1332360000},
+      {"name": "Maldives", "code": "MV", "lat": 31200, "lon": 730000, "color": "#c1bc3b", "area": 298, "pop": 344023},
+      {"name": "Nepal", "code": "NP", "lat": 280000, "lon": 840000, "color": "#c1bc3b", "area": 143351, "pop": 30986975},
+      {"name": "Pakistan", "code": "PK", "lat": 300000, "lon": 700000, "color": "#c1bc3b", "area": 881912, "pop": 194808000},
+      {"name": "Sri Lanka", "code": "CE", "lat": 70000, "lon": 810000, "color": "#c1bc3b", "area": 62732, "pop": 21203000}
+     ]
+    },
+    {
+     "name": "westernAsia",
+     "children": [
+      {"name": "Bahrain", "code": "BA", "lat": 260000, "lon": 503000, "color": "#8f8a08", "area": 765, "pop": 1404900},
+      {"name": "Cyprus", "code": "CY", "lat": 350000, "lon": 330000, "color": "#8f8a08", "area": 9241, "pop": 847},
+      {"name": "Gaza Strip", "code": "GZ", "lat": 312530, "lon": 342224, "color": "#8f8a08", "area": 0, "pop": 0},
+      {"name": "Iran", "code": "IR", "lat": 320000, "lon": 530000, "color": "#8f8a08", "area": 1531595, "pop": 79684000},
+      {"name": "Iraq", "code": "IZ", "lat": 330000, "lon": 440000, "color": "#8f8a08", "area": 437367, "pop": 36787000},
+      {"name": "Israel", "code": "IS", "lat": 313000, "lon": 344500, "color": "#8f8a08", "area": 20330, "pop": 8610140},
+      {"name": "Jordan", "code": "JO", "lat": 310000, "lon": 360000, "color": "#8f8a08", "area": 88802, "pop": 9761070},
+      {"name": "Kuwait", "code": "KU", "lat": 293000, "lon": 474500, "color": "#8f8a08", "area": 17818, "pop": 4183658},
+      {"name": "Lebanon", "code": "LE", "lat": 335000, "lon": 355000, "color": "#8f8a08", "area": 10230, "pop": 5988000},
+      {"name": "Oman", "code": "MU", "lat": 210000, "lon": 570000, "color": "#8f8a08", "area": 309500, "pop": 4496760},
+      {"name": "Qatar", "code": "QA", "lat": 253000, "lon": 511500, "color": "#8f8a08", "area": 11586, "pop": 2401598},
+      {"name": "Saudi Arabia", "code": "SA", "lat": 250000, "lon": 450000, "color": "#8f8a08", "area": 2149690, "pop": 32248000},
+      {"name": "Syria", "code": "SY", "lat": 350000, "lon": 380000, "color": "#8f8a08", "area": 183630, "pop": 18564000},
+      {"name": "Turkey", "code": "TU", "lat": 390332, "lon": 345442, "color": "#8f8a08", "area": 769632, "pop": 78741053},
+      {"name": "United Arab Emirates", "code": "AE", "lat": 240000, "lon": 540000, "color": "#8f8a08", "area": 83600, "pop": 9856000},
+      {"name": "West Bank", "code": "WE", "lat": 314000, "lon": 351500, "color": "#8f8a08", "area": 0, "pop": 0},
+      {"name": "Yemen", "code": "YM", "lat": 153000, "lon": 473000, "color": "#8f8a08", "area": 527968, "pop": 27478000}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "europe",
+   "children": [
+    {
+     "name": "easternEurope",
+     "children": [
+      {"name": "Armenia", "code": "AM", "lat": 400000, "lon": 450000, "color": "#0e66ef", "area": 28342, "pop": 2995100},
+      {"name": "Azerbaijan", "code": "AJ", "lat": 403000, "lon": 473000, "color": "#0e66ef", "area": 86100, "pop": 9775700},
+      {"name": "Belarus", "code": "BO", "lat": 530000, "lon": 280000, "color": "#0e66ef", "area": 202900, "pop": 9505200},
+      {"name": "Bulgaria", "code": "BU", "lat": 430000, "lon": 250000, "color": "#0e66ef", "area": 108489, "pop": 7153784},
+      {"name": "Czech Republic", "code": "EZ", "lat": 494500, "lon": 150000, "color": "#0e66ef", "area": 77247, "pop": 10564866},
+      {"name": "Georgia", "code": "GG", "lat": 420000, "lon": 433000, "color": "#0e66ef", "area": 69700, "pop": 3720400},
+      {"name": "Hungary", "code": "HU", "lat": 470000, "lon": 200000, "color": "#0e66ef", "area": 89608, "pop": 9823000},
+      {"name": "Moldova", "code": "MD", "lat": 470000, "lon": 290000, "color": "#0e66ef", "area": 32891, "pop": 3553100},
+      {"name": "Poland", "code": "PL", "lat": 520000, "lon": 200000, "color": "#0e66ef", "area": 311888, "pop": 38426809},
+      {"name": "Romania", "code": "RO", "lat": 460000, "lon": 250000, "color": "#0e66ef", "area": 231291, "pop": 19760000},
+      {"name": "Russia", "code": "RS", "lat": 600000, "lon": 1000000, "color": "#0e66ef", "area": 16377742, "pop": 146727405},
+      {"name": "Slovakia", "code": "LO", "lat": 484000, "lon": 193000, "color": "#0e66ef", "area": 48105, "pop": 5426252},
+      {"name": "Ukraine", "code": "UP", "lat": 490000, "lon": 320000, "color": "#0e66ef", "area": 553544, "pop": 42650186}
+     ]
+    },
+    {
+     "name": "northernEurope",
+     "children": [
+      {"name": "Denmark", "code": "DA", "lat": 560000, "lon": 100000, "color": "#0a45a8", "area": 42434, "pop": 5745526},
+      {"name": "Estonia", "code": "EN", "lat": 590000, "lon": 260000, "color": "#0a45a8", "area": 42388, "pop": 1315944},
+      {"name": "Faroe Islands", "code": "FO", "lat": 620000, "lon": -70000, "color": "#0a45a8", "area": 1393, "pop": 49755},
+      {"name": "Finland", "code": "FI", "lat": 640000, "lon": 260000, "color": "#0a45a8", "area": 303815, "pop": 5501043},
+      {"name": "Guernsey", "code": "GK", "lat": 493500, "lon": -22000, "color": "#0a45a8", "area": 78, "pop": 63001},
+      {"name": "Iceland", "code": "IC", "lat": 650000, "lon": -180000, "color": "#0a45a8", "area": 100250, "pop": 33761},
+      {"name": "Ireland", "code": "EI", "lat": 530000, "lon": -80000, "color": "#0a45a8", "area": 68883, "pop": 4757976},
+      {"name": "Isle of Man", "code": "IM", "lat": 541500, "lon": -43000, "color": "#0a45a8", "area": 572, "pop": 84497},
+      {"name": "Jersey", "code": "JE", "lat": 491300, "lon": -20700, "color": "#0a45a8", "area": 116, "pop": 1027},
+      {"name": "Latvia", "code": "LG", "lat": 570000, "lon": 250000, "color": "#0a45a8", "area": 62249, "pop": 1957200},
+      {"name": "Lithuania", "code": "LH", "lat": 560000, "lon": 240000, "color": "#0a45a8", "area": 62680, "pop": 2859709},
+      {"name": "Norway", "code": "NO", "lat": 620000, "lon": 100000, "color": "#0a45a8", "area": 304282, "pop": 5236826},
+      {"name": "Svalbard", "code": "SV", "lat": 780000, "lon": 200000, "color": "#0a45a8", "area": 62045, "pop": 0},
+      {"name": "Sweden", "code": "SW", "lat": 620000, "lon": 150000, "color": "#0a45a8", "area": 410335, "pop": 9954420},
+      {"name": "United Kingdom", "code": "UK", "lat": 540000, "lon": -40000, "color": "#0a45a8", "area": 241930, "pop": 65110000}
+     ]
+    },
+    {
+     "name": "southernEurope",
+     "children": [
+      {"name": "Albania", "code": "AL", "lat": 410000, "lon": 200000, "color": "#0e23ef", "area": 27398, "pop": 2886026},
+      {"name": "Andorra", "code": "AN", "lat": 423000, "lon": 13000, "color": "#0e23ef", "area": 468, "pop": 78014},
+      {"name": "Bosnia and Herzegovina", "code": "BK", "lat": 441500, "lon": 175000, "color": "#0e23ef", "area": 51187, "pop": 3531159},
+      {"name": "Croatia", "code": "HR", "lat": 451000, "lon": 153000, "color": "#0e23ef", "area": 55974, "pop": 4190669},
+      {"name": "Gibraltar", "code": "GI", "lat": 360800, "lon": -52100, "color": "#0e23ef", "area": 7, "pop": 3314},
+      {"name": "Greece", "code": "GR", "lat": 390000, "lon": 220000, "color": "#0e23ef", "area": 130647, "pop": 10858018},
+      {"name": "Italy", "code": "IT", "lat": 425000, "lon": 125000, "color": "#0e23ef", "area": 294140, "pop": 60665551},
+      {"name": "Kosovo", "code": "KV", "lat": 423500, "lon": 210000, "color": "#0e23ef", "area": 0, "pop": 1836978},
+      {"name": "Macedonia", "code": "MK", "lat": 415000, "lon": 220000, "color": "#0e23ef", "area": 25433, "pop": 2071278},
+      {"name": "Malta", "code": "MT", "lat": 355500, "lon": 142600, "color": "#0e23ef", "area": 316, "pop": 429344},
+      {"name": "Montenegro", "code": "MJ", "lat": 423000, "lon": 191800, "color": "#0e23ef", "area": 13452, "pop": 62181},
+      {"name": "Portugal", "code": "PO", "lat": 393000, "lon": -80000, "color": "#0e23ef", "area": 91470, "pop": 10341330},
+      {"name": "San Marino", "code": "SM", "lat": 435600, "lon": 122500, "color": "#0e23ef", "area": 61, "pop": 33005},
+      {"name": "Serbia", "code": "RI", "lat": 440000, "lon": 210000, "color": "#0e23ef", "area": 88246, "pop": 7076372},
+      {"name": "Slovenia", "code": "SI", "lat": 461500, "lon": 151000, "color": "#0e23ef", "area": 20151, "pop": 2063371},
+      {"name": "Spain", "code": "SP", "lat": 400000, "lon": -40000, "color": "#0e23ef", "area": 498980, "pop": 46812000},
+      {"name": "Vatican City", "code": "VT", "lat": 415400, "lon": 122700, "color": "#0e23ef", "area": 1, "pop": 842}
+     ]
+    },
+    {
+     "name": "westernEurope",
+     "children": [
+      {"name": "Austria", "code": "AU", "lat": 472000, "lon": 132000, "color": "#4883f3", "area": 82445, "pop": 8741753},
+      {"name": "Belgium", "code": "BE", "lat": 505000, "lon": 40000, "color": "#4883f3", "area": 30278, "pop": 11334099},
+      {"name": "France", "code": "FR", "lat": 460000, "lon": 20000, "color": "#4883f3", "area": 640427, "pop": 66821000},
+      {"name": "Germany", "code": "GM", "lat": 513000, "lon": 103000, "color": "#4883f3", "area": 348672, "pop": 82175700},
+      {"name": "Liechtenstein", "code": "LS", "lat": 471000, "lon": 93200, "color": "#4883f3", "area": 160, "pop": 37623},
+      {"name": "Luxembourg", "code": "LU", "lat": 494500, "lon": 61000, "color": "#4883f3", "area": 2586, "pop": 5762},
+      {"name": "Monaco", "code": "MN", "lat": 434400, "lon": 72400, "color": "#4883f3", "area": 2, "pop": 384},
+      {"name": "Netherlands", "code": "NL", "lat": 523000, "lon": 54500, "color": "#4883f3", "area": 33893, "pop": 17063300},
+      {"name": "Switzerland", "code": "SZ", "lat": 470000, "lon": 80000, "color": "#4883f3", "area": 39997, "pop": 8364100}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "oceania",
+   "children": [
+    {
+     "name": "australasia",
+     "children": [
+      {"name": "Ashmore and Cartier Islands", "code": "AT", "lat": -122500, "lon": 1232000, "color": "#d02d2d", "area": 5, "pop": 0},
+      {"name": "Australia", "code": "AS", "lat": -250000, "lon": 1350000, "color": "#d02d2d", "area": 7633565, "pop": 24272700},
+      {"name": "Christmas Island", "code": "KT", "lat": -103000, "lon": 1054000, "color": "#d02d2d", "area": 135, "pop": 2072},
+      {"name": "Cocos (Keeling) Islands", "code": "CK", "lat": -120000, "lon": 965000, "color": "#d02d2d", "area": 14, "pop": 550},
+      {"name": "Coral Sea Islands", "code": "CR", "lat": -173000, "lon": 1510000, "color": "#d02d2d", "area": 3, "pop": 0},
+      {"name": "New Zealand", "code": "NZ", "lat": -420000, "lon": 1740000, "color": "#d02d2d", "area": 262443, "pop": 4732190},
+      {"name": "Norfolk Island", "code": "NF", "lat": -290200, "lon": 1675700, "color": "#d02d2d", "area": 36, "pop": 2302}
+     ]
+    },
+    {
+     "name": "melanesia",
+     "children": [
+      {"name": "Fiji", "code": "FJ", "lat": -180000, "lon": 1780000, "color": "#8d4343", "area": 18274, "pop": 867},
+      {"name": "New Caledonia", "code": "NC", "lat": -213000, "lon": 1653000, "color": "#8d4343", "area": 18275, "pop": 268767},
+      {"name": "Papua New Guinea", "code": "PP", "lat": -60000, "lon": 1470000, "color": "#8d4343", "area": 452860, "pop": 8151300},
+      {"name": "Solomon Islands", "code": "BP", "lat": -80000, "lon": 1590000, "color": "#8d4343", "area": 27986, "pop": 642},
+      {"name": "Vanuatu", "code": "NH", "lat": -160000, "lon": 1670000, "color": "#8d4343", "area": 12189, "pop": 2775}
+     ]
+    },
+    {
+     "name": "micronesia",
+     "children": [
+      {"name": "Federated States of Micronesia", "code": "FM", "lat": 50000, "lon": 1520000, "color": "#6f0606", "area": 702, "pop": 1028},
+      {"name": "Guam", "code": "GU", "lat": 132640, "lon": 1444412, "color": "#6f0606", "area": 544, "pop": 1842},
+      {"name": "Kiribati", "code": "KR", "lat": -50000, "lon": -1700000, "color": "#6f0606", "area": 811, "pop": 1134},
+      {"name": "Marshall Islands", "code": "RM", "lat": 100000, "lon": 1670000, "color": "#6f0606", "area": 181, "pop": 5488},
+      {"name": "Nauru", "code": "NR", "lat": -3200, "lon": 1665500, "color": "#6f0606", "area": 21, "pop": 10084},
+      {"name": "Northern Mariana Islands", "code": "MP", "lat": 160000, "lon": 1460000, "color": "#6f0606", "area": 464, "pop": 5694},
+      {"name": "Palau", "code": "PS", "lat": 60000, "lon": 1340000, "color": "#6f0606", "area": 459, "pop": 1795},
+      {"name": "US Minor Outlying Islands", "code": "UM", "lat": 55252, "lon": -1620421, "color": "#6f0606", "area": 22, "pop": 0}
+     ]
+    },
+    {
+     "name": "polynesia",
+     "children": [
+      {"name": "American Samoa", "code": "AS", "lat": -142000, "lon": -1700000, "color": "#d87272", "area": 199, "pop": 571},
+      {"name": "Cook Islands", "code": "CW", "lat": -160500, "lon": -1613500, "color": "#d87272", "area": 236, "pop": 181},
+      {"name": "French Polynesia", "code": "FP", "lat": -150000, "lon": -1400000, "color": "#d87272", "area": 3827, "pop": 2718},
+      {"name": "Niue", "code": "NE", "lat": -190200, "lon": -1695200, "color": "#d87272", "area": 260, "pop": 147},
+      {"name": "Pitcairn Islands", "code": "PC", "lat": -250400, "lon": -1300600, "color": "#d87272", "area": 47, "pop": 57},
+      {"name": "Samoa", "code": "WS", "lat": -134811, "lon": -1721042, "color": "#d87272", "area": 2821, "pop": 194899},
+      {"name": "Tokelau", "code": "TL", "lat": -90000, "lon": -1714500, "color": "#d87272", "area": 12, "pop": 1411},
+      {"name": "Tonga", "code": "TN", "lat": -200000, "lon": -1750000, "color": "#d87272", "area": 717, "pop": 103252},
+      {"name": "Tuvalu", "code": "TV", "lat": -80000, "lon": 1780000, "color": "#d87272", "area": 26, "pop": 1064},
+      {"name": "Wallis and Futuna", "code": "WF", "lat": -131800, "lon": -1761200, "color": "#d87272", "area": 142, "pop": 1175}
+     ]
+    }
+   ]
+  },
+  {
+   "name": "antartic",
+   "children": [
+    {
+     "name": "antarticIslands",
+     "children": [
+      {"name": "Bouvet Island", "code": "BV", "lat": -542600, "lon": 32400, "color": "#fff", "area": 49, "pop": 0},
+      {"name": "French Southern and Antarctic Lands", "code": "FS", "lat": -430000, "lon": 670000, "color": "#fff", "area": 7668, "pop": 0},
+      {"name": "Heard Island and McDonald Islands", "code": "HM", "lat": -530000, "lon": 730000, "color": "#fff", "area": 412, "pop": 0}
+     ]
+    }
+   ]
+  }
+ ]
+}

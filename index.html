@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Projeto final - Mapa</title>
+</head>
+<body>
+
+<style type="text/css">
+	
+div.tooltip {	
+    position: absolute;			
+    text-align: center;			
+    width: 60px;					
+    height: auto;					
+    padding: 2px;				
+    font: 12px sans-serif;		
+    background: lightsteelblue;	
+    border: 0px;		
+    border-radius: 8px;			
+    pointer-events: none;			
+}
+</style>
+
+<div id = "map"> 
+	<div id="subtitle"></div>
+</div>
+
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+
+<script type="text/javascript">
+
+var projection = d3.geoMercator()
+var path = d3.geoPath().projection(projection);
+
+var svg = d3.select("#map").append("svg")
+    .attr("viewBox", "-50 -100 1100 800")
+	 .attr("preserveAspectRatio", "xMidYMid meet");
+var data;
+
+var div = d3.select("body").append("div")	
+    .attr("class", "tooltip")				
+    .style("opacity", 0);
+
+
+d3.json("countries.json", function(error, mapa) {
+	if (error) throw error;
+	var elementEnter = svg.selectAll(".pin")
+							.data(mapa)
+							.enter().append("g");
+
+	var circle = elementEnter.append("circle", ".pin")
+		.attr("r", function(r) {
+			var size = Math.sqrt(r.area/Math.PI)/50;
+			if(size>0){
+				if(size < 2) size=2;
+			}
+			return size;
+		})
+		.attr("transform", function(d) {
+			return "translate(" + projection([
+				d.latlng[1],
+				d.latlng[0]
+			]) + ")";
+		})
+		.attr('fill-opacity', 0.5)
+		.on("mouseover", function(d) {		
+            div.transition()		
+                .duration(200)		
+                .style("opacity", .9);		
+            div.html("<span>"+d.name.common+"</span>")	
+                .style("left", (d3.event.pageX) + "px")		
+                .style("top", (d3.event.pageY - 28) + "px");	
+            })					
+        .on("mouseout", function(d) {		
+            div.transition()		
+                .duration(500)		
+                .style("opacity", 0);	
+        });;
+
+	// elementEnter.append("text")
+	//     .attr("dx", function(d){return -20})
+	//     .text(function(d){return d.name.common})
+	// //var projection = d3.geo.mercator().scale(900).translate([-600,700]);
+	var path= d3.geoPath().projection(projection);
+						
+});
+
+
+
+
+</script>
+
+
+</body>
+</html>

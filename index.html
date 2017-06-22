@@ -29,7 +29,7 @@ div.tooltip {
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script type="text/javascript">
-
+var width = 1100, height = 800, sizeDivisor = 100, nodePadding = 0;
 var projection = d3.geoEquirectangular()
 var path = d3.geoPath().projection(projection);
 
@@ -43,49 +43,69 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 
-d3.json("countries.json", function(error, mapa) {
+d3.json("https://raw.githubusercontent.com/lucasrodriguex/tcc/master/countries.json", function(error, mapa) {
 	if (error) throw error;
-	var elementEnter = svg.selectAll(".pin")
+	
+  mapa.forEach(function(d) {
+        d.cx = projection([d.latlng[1],d.latlng[0]])[0];
+        d.cy = projection([d.latlng[1],d.latlng[0]])[1];
+
+        d.x = d.cx;
+        d.y = d.cy;
+
+        d.radius = Math.sqrt(d.area/Math.PI)/50;
+      });
+
+  var elementEnter = svg.selectAll(".pin")
 							.data(mapa)
 							.enter().append("g");
-
+  
 	var circle = elementEnter.append("circle", ".pin")
-		.attr("r", function(r) {
-			var size = Math.sqrt(r.area/Math.PI)/50;
+		.attr("r", function(d) {
+			var size = d.radius;
 			if(size>0){
 				if(size < 2) size=2;
 			}
 			return size;
 		})
 		.attr("transform", function(d) {
-			return "translate(" + projection([
-				d.latlng[1],
-				d.latlng[0]
-			]) + ")";
+			return "translate(" + projection([d.latlng[1],d.latlng[0]]) + ")";
 		})
 		.attr('fill-opacity', 0.5)
 		.on("mouseover", function(d) {		
-            div.transition()		
-                .duration(200)		
-                .style("opacity", .9);		
-            div.html("<span>"+d.name.common+"</span>")	
-                .style("left", (d3.event.pageX) + "px")		
-                .style("top", (d3.event.pageY - 28) + "px");	
-            })					
-        .on("mouseout", function(d) {		
-            div.transition()		
-                .duration(500)		
-                .style("opacity", 0);	
-        });;
+        div.transition()		
+            .duration(200)		
+            .style("opacity", .9);		
+        div.html("<span>"+d.name.common+"</span>")	
+            .style("left", (d3.event.pageX) + "px")		
+            .style("top", (d3.event.pageY - 28) + "px");	
+    })					
+    .on("mouseout", function(d) {		
+        div.transition()		
+            .duration(500)		
+            .style("opacity", 0);
+    });					
 
-	// elementEnter.append("text")
-	//     .attr("dx", function(d){return -20})
-	//     .text(function(d){return d.name.common})
-	// //var projection = d3.geo.mercator().scale(900).translate([-600,700]);
-	var path= d3.geoPath().projection(projection);
-						
+    
+
+    const forceX = d3.forceX(1100 / 2).strength(0.010)
+    const forceY = d3.forceY(800 / 2).strength(0.010)
+  
+    var simulation = d3.forceSimulation()
+    .force("collide", d3.forceCollide().strength(2).radius(function(d){return d.radius + nodePadding; }).iterations(1))
+    .on("tick", function(d){
+
+      circle
+          .attr("transform", function(d) {return "translate(" + (d.x - d.cx) + ", " + (d.y - d.cy) + ")";});
+
+      circle
+      .attr("cx", function(d) { return d.x; })
+      .attr("cy", function(d) { return d.y; });
+      
+    })
+    .nodes(mapa)
+    
 });
-
 
 
 

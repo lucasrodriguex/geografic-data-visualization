@@ -100,8 +100,8 @@ d3.json("https://raw.githubusercontent.com/lucasrodriguex/tcc/master/countries.j
           .attr("transform", function(d) {return "translate(" + (d.x - d.cx) + ", " + (d.y - d.cy) + ")";});
 
       circle
-      .attr("cx", function(d) { return projection([d.latlng[1],d.latlng[0]])[0]; })
-      .attr("cy", function(d) { return projection([d.latlng[1],d.latlng[0]])[1]; });
+      .attr("cx", function(d) { return d.cx; })
+      .attr("cy", function(d) { return d.cy; });
       
     })
     .nodes(mapa)

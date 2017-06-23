@@ -44,7 +44,7 @@ var div = d3.select("body").append("div")
     .style("opacity", 0);
 
 
-d3.json("https://raw.githubusercontent.com/lucasrodriguex/tcc/master/countries.json", function(error, mapa) {
+d3.json("countries.json", function(error, mapa) {
 	if (error) throw error;
 	
   mapa.forEach(function(d) {

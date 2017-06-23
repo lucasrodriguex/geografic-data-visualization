@@ -1,17 +1,11 @@
-var width = window.innerWidth, height = window.innerHeight
-
 var projection = d3.geoEquirectangular()
-    .scale(height / Math.PI)
+    .scale(height / Math.PI )
     .translate([width / 2, height / 2]);
 
 var path = d3.geoPath()
     .projection(projection);
 
 var graticule = d3.geoGraticule();
-
-var svg = d3.select("body").append("svg")
-    .attr("width", width)
-    .attr("height", height);
 
 svg.append("path")
     .datum(graticule)

@@ -28,15 +28,15 @@ div.tooltip {
 
 <script src="//d3js.org/topojson.v1.min.js"></script>
 
-<script src="mapa2d.js"></script>
 
 <script type="text/javascript">
-var projection = d3.geoEquirectangular()
+var width = window.innerWidth, height = window.innerHeight
+var projection = d3.geoEquirectangular().scale(height / Math.PI )
 var path = d3.geoPath().projection(projection);
 
 var svg = d3.select("#map").append("svg")
-    .attr("viewBox", "-50 -20 1100 800")
-	 .attr("preserveAspectRatio", "xMidYMid meet");
+    .attr("width", width)
+    .attr("height", height + 100);
 
 var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
@@ -107,6 +107,7 @@ d3.json("countries.json", function(error, mapa) {
 
 
 </script>
+<script src="mapa2d.js"></script>
 
 
 </body>

@@ -29,12 +29,12 @@ div.tooltip {
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
 <script type="text/javascript">
-var width = 1100, height = 800, sizeDivisor = 100, nodePadding = 2;
+var width = window.innerWidth, height = window.innerHeight, sizeDivisor = 100, nodePadding = 2;
 var projection = d3.geoEquirectangular()
 var path = d3.geoPath().projection(projection);
 
 var svg = d3.select("#map").append("svg")
-    .attr("viewBox", "-50 -100 1100 800")
+    .attr("viewBox", "-50 -20 1100 800")
 	 .attr("preserveAspectRatio", "xMidYMid meet");
 var data;
 
@@ -67,11 +67,11 @@ d3.json("https://raw.githubusercontent.com/lucasrodriguex/tcc/master/countries.j
 			}
 			return size;
 		})
-		.attr("transform", function(d) {
-			return "translate(" + projection([d.latlng[1],d.latlng[0]]) + ")";
-		})
+		
 		.attr('fill-opacity', 0.5)
-		.on("mouseover", function(d) {		
+	
+	//nome dos paises
+	circle.on("mouseover", function(d) {		
         div.transition()		
             .duration(200)		
             .style("opacity", .9);		
@@ -87,11 +87,12 @@ d3.json("https://raw.githubusercontent.com/lucasrodriguex/tcc/master/countries.j
 
     
 
-    const forceX = d3.forceX(1100 / 2).strength(0.010)
-    const forceY = d3.forceY(800 / 2).strength(0.010)
+    const forceX = d3.forceX(width /4).strength(0.004)
+    const forceY = d3.forceY(height / 4).strength(0.004)
   
     var simulation = d3.forceSimulation()
-
+    .force('X', d3.forceX().x( function(d) { return d.cx} ))
+    .force('Y', d3.forceY().y( function(d) { return d.cy} ))
     .force("charge", d3.forceManyBody().strength(0))
     .force("collide", d3.forceCollide().strength(2).radius(function(d){return d.radius + 2; }).iterations(1))
     .on("tick", function(d){

@@ -66,12 +66,8 @@ function render(error,mapa) {
                 d.radius = Math.sqrt(d.population.total/Math.PI)/200;
                 //d.radius = Math.sqrt(d.area/Math.PI)/30;
 			} else {
-				d.radius = 1;
+				d.radius =  0;
 			}
-			if(d.radius == 0) {
-				d.radius = 1;
-			}
-
 		});
 					
 		var pies = svg.selectAll(".pie")

@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,105 +11,130 @@
 div.tooltip {	
     position: absolute;			
     text-align: center;			
-    width: 60px;					
+    width: 80px;
     height: auto;					
     padding: 2px;				
     font: 12px sans-serif;		
     background: lightsteelblue;	
     border: 0px;		
-    border-radius: 8px;			
+    border-radius: 4px;			
     pointer-events: none;			
 }
 </style>
 
-<div id = "map"> 
+<div id = "map">
+	
+	<svg version="1.1" viewBox="0 -100 1200 700" preserveAspectRatio="xMinYMin meet" class="content">
+	</svg>
+	
 </div>
 
 <script src="https://d3js.org/d3.v4.min.js"></script>
 
-<script src="//d3js.org/topojson.v1.min.js"></script>
-
-
 <script type="text/javascript">
-var width = window.innerWidth, height = window.innerHeight-200
-var projection = d3.geoEquirectangular().scale(height / Math.PI )
+var width = 1500 //d3.select("svg").attr("width")
+var height = width / 2
+var projection = d3.geoEquirectangular().scale(width / (2*Math.PI) )
 var path = d3.geoPath().projection(projection);
-
-var svg = d3.select("#map").append("svg")
+var color = d3.schemeCategory10;
+var svg = d3.select("svg")
+	.style("background-color", "#CCF")
     .attr("width", width)
-    .attr("height", height + 100)
+    .attr("height", height)
     .call(d3.zoom().on("zoom", function () {
         svg.attr("transform", d3.event.transform)
     }));
+
 
 var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
     .style("opacity", 0);
 
-d3.json("countries.json", function(error, mapa) {
-	if (error) throw error;
 
-	mapa.forEach(function(d) {
-        d.cx = projection([d.latlng[1],d.latlng[0]])[0];
-        d.cy = projection([d.latlng[1],d.latlng[0]])[1];
 
-        d.x = d.cx;
-        d.y = d.cy;
-
-        d.radius = Math.sqrt(d.area/Math.PI)/40;
-      });
-	var elementEnter = svg.selectAll(".pin")
-							.data(mapa)
-
-							.enter().append("g");
-  
-	var circle = elementEnter.append("circle", ".pin")
-		.attr("r", function(d) {
-			var size = d.radius;
-			if(size < 2) size=2;
-			return size;
-		})
-		
-		.attr('fill-opacity', 0.5)
-	
-	//nome dos paises
-	circle.on("mouseover", function(d) {		
-        div.transition()		
-            .duration(200)		
-            .style("opacity", .9);		
-        div.html("<span>"+d.name.common+"</span>")	
-            .style("left", (d3.event.pageX) + "px")		
-            .style("top", (d3.event.pageY - 28) + "px");	
-    })					
-    .on("mouseout", function(d) {		
-        div.transition()		
-            .duration(500)		
-            .style("opacity", 0);
-    });					
-  
-    
-    var simulation = d3.forceSimulation()
-    .force('X', d3.forceX().x( function(d) { return d.cx} ))
-    .force('Y', d3.forceY().y( function(d) { return d.cy} ))
-    .force("collide", d3.forceCollide().strength(2).radius(function(d){return d.radius + 2; }).iterations(1))
-    .on("tick", function(d){
-
-      circle
-          .attr("transform", function(d) {return "translate(" + (d.x - d.cx) + ", " + (d.y - d.cy) + ")";});
-
-      circle
-      .attr("cx", function(d) { return d.cx; })
-      .attr("cy", function(d) { return d.cy; });
-      
-    })
-    .nodes(mapa)
-    
+d3.json("https://tcc-lucas-diogo.herokuapp.com/allCountries", function(error, mapa) {
+	render(error,mapa)
 });
+
+
+function render(error,mapa) {
+		if (error) throw error;
+
+		mapa.forEach(function(d) {
+		    d.cx = projection([d.longitude,d.latitude])[0];
+	        d.cy = projection([d.longitude,d.latitude])[1];
+	
+	        d.x = d.cx;
+	        d.y = d.cy;
+			
+			if(d.population != null) {
+				d.radius = Math.sqrt(d.population.total/Math.PI)/200;
+			} else {
+				d.radius = 20;
+			}
+			if(d.radius == 0) {
+				d.radius = 20;
+			}
+
+		});
+					
+		var pies = svg.selectAll(".pie")
+			.data(mapa)
+			.enter()
+			.append('g')
+			.attr('class','pie');
+
+			
+		pies.each(function(d,i){
+			var pieG = d3.select(this).attr("cx", d.cx).attr("cy", d.cy);
+
+			var arc = d3.arc()
+						.outerRadius(d.radius)
+						.innerRadius(0);
+			
+			var pie = d3.pie()
+						.sort(null)
+						.value(function(d) { return d; });
+
+			var data;
+			if(d.population == null) {
+				data = [];
+			} else {
+				data = [d.population.from0to9, d.population.from10to19, d.population.from20to29, d.population.from30to39,
+				d.population.from40to49, d.population.from50to59, d.population.from60to69, d.population.from70to79, d.population.from80up]; 
+			}
+
+			var g = pieG.selectAll(".arc")
+			.data(pie(data))
+			.enter().append("g")
+			.attr("class", "arc")
+			
+			g.append("path")
+				.attr('d',arc)
+				.attr("fill",function(d,i){
+					return color[i+1];     
+				});
+		});
+		var simulation = d3.forceSimulation()
+				.force('X', d3.forceX().x( function(d) { return d.cx} ))
+				.force('Y', d3.forceY().y( function(d) { return d.cy} ))
+				.force("collide", d3.forceCollide().strength(1).radius(function(d){return d.radius + 2; }).iterations(1))
+				.on("tick", function(d){
+					pies.attr("transform", function(d) {return "translate(" + d.x + ", " + d.y  + ")";});
+					
+                    pies.attr("cx", function(d) { return d.cx; }).attr("cy", function(d) { return d.cy; });
+				
+				})
+				.nodes(mapa)
+			
+
+	    
+
+}
 
 
 
 </script>
-<script src="mapa2d.js"></script>
 
 
 </body>

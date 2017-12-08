@@ -28,8 +28,8 @@ div.tooltip {
 <script src="https://d3js.org/topojson.v1.min.js"></script>
 
 <script type="text/javascript">
-var width = window.innerWidth, height = window.innerHeight-50;
-var projection = d3.geoEquirectangular().scale(width / (Math.PI) )
+var width = window.innerWidth, height = window.innerHeight;
+var projection = d3.geoEquirectangular().scale(width / (2*Math.PI) )
 var path = d3.geoPath().projection(projection);
 var color = d3.schemeCategory10;
 
@@ -66,10 +66,10 @@ function render(error,mapa) {
                 d.radius = Math.sqrt(d.population.total/Math.PI)/200;
                 //d.radius = Math.sqrt(d.area/Math.PI)/30;
 			} else {
-				d.radius = 20;
+				d.radius = 1;
 			}
 			if(d.radius == 0) {
-				d.radius = 20;
+				d.radius = 1;
 			}
 
 		});
@@ -112,9 +112,9 @@ function render(error,mapa) {
 				});
 		});
 		var simulation = d3.forceSimulation()
-				.force('X', d3.forceX().x( function(d) { return d.cx} ))
-				.force('Y', d3.forceY().y( function(d) { return d.cy} ))
-				.force("collide", d3.forceCollide().strength(.4).radius(function(d){return d.radius + 2; }).iterations(1))
+				.force('x', d3.forceX().x( function(d) { return d.cx} ))
+				.force('y', d3.forceY().y( function(d) { return d.cy} ))
+				.force("collide", d3.forceCollide().strength(1).radius(function(d){return d.radius + 2; }).iterations(2))
 				.on("tick", function(d){
 					pies.attr("transform", function(d) {return "translate(" + d.x + ", " + d.y  + ")";});
 					

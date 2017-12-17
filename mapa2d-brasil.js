@@ -1,5 +1,5 @@
 var projection = d3.geoEquirectangular().center([-52, -15])
-    .scale(800)
+    .scale(900)
     .translate([width / 2, height / 2]);
 
 var path = d3.geoPath()

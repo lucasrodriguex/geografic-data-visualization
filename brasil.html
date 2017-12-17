@@ -61,9 +61,9 @@ scale.range([8,100000]);
 
 var svg = d3.select("#map").append("svg")
     .attr("width", width)
-    .attr("height", height + 100)
-    
-
+	.attr("height", height + 100)
+	
+var g = svg.append("g");
 
 var div = d3.select("body").append("div")	
     .attr("class", "tooltip")				
@@ -94,7 +94,7 @@ function render(error,mapa) {
 			}
 		});
 					
-		var pies = svg.selectAll(".pie")
+		pies = g.selectAll(".pie")
 			.data(mapa)
 			.enter()
 			.append('g')
@@ -120,16 +120,15 @@ function render(error,mapa) {
 				d.population.from40to49, d.population.from50to59, d.population.from60to69, d.population.from70to79, d.population.from80up]; 
 			}
 
-			var g = pieG.selectAll(".arc")
+			pieG.selectAll(".arc")
 			.data(pie(data))
 			.enter().append("g")
 			.attr("class", "arc")
-			
-			g.append("path")
-				.attr('d',arc)
-				.attr("fill",function(d,i){
-					return color[i+1];     
-				});
+			.append("path")
+			.attr('d',arc)
+			.attr("fill",function(d,i){
+				return color[i+1];     
+			});
 		});
 		var simulation = d3.forceSimulation()
 				.force('x', d3.forceX().x( function(d) { return d.cx} ))
@@ -156,14 +155,16 @@ function render(error,mapa) {
                 .duration(500)		
                 .style("opacity", 0);
         });	
-			
-
-	    
 
 }
 
 
+var zoom = d3.zoom()
+  .on("zoom",function() {
+     g.attr("transform",d3.event.transform);
+});
 
+svg.call(zoom)
 </script>
 <script src="mapa2d-brasil.js"></script>
 

@@ -7,7 +7,7 @@ var path = d3.geoPath()
 
 var graticule = d3.geoGraticule();
 
-svg.append("path")
+g.append("path")
     .datum(graticule)
     .attr("class", "graticule")
     
@@ -15,7 +15,7 @@ svg.append("path")
 d3.json("world-50m.json", function(error, world) {
   if (error) throw error;
 
-  svg.append("path", ".graticule")
+  g.append("path", ".graticule")
       .datum(topojson.feature(world, world.objects.land))
       .attr("class", "land")
       .attr("d", path).attr('fill-opacity', 0.1).attr("fill", "gray");
@@ -31,7 +31,7 @@ d3.json("world-50m.json", function(error, world) {
 d3.json("br-states.json", function(error, brasil) {
     if (error) throw error;
   
-    svg.append("path", ".graticule")
+    g.append("path", ".graticule")
     .datum(topojson.mesh(brasil, brasil.objects.estados))
     .attr("class", "boundary-br")
     .attr("d", path)

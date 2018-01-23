@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Projeto final - Mapa</title>
+
+
+    <style type="text/css">
+
+div.tooltip {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 4px 10px;
+    font: 16px Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    background: #FFF;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+div h1 {
+    position: absolute;
+    text-align: center;
+    width: auto;
+    height: auto;
+    padding: 4px 10px;
+    font: 36px Helvetica, Arial, sans-serif;
+    font-weight: lighter;
+    background: #FFF;
+    border: 0px;
+    border-radius: 2px;
+    pointer-events: none;
+    white-space: nowrap;
+    opacity: .9;
+}
+
+.legend {
+	font-size: 12px;
+}
+rect {
+	stroke-width: 2;
+}
+
+.boundary {
+	fill: none;
+	stroke: #E9E8E8;
+	stroke-linejoin: round;
+}
+body {
+	margin:0;
+	padding:0;
+	background-color:#F2F2F6;
+}
+
+#legenda {
+    font-family: Helvetica, Arial, sans-serif;
+	position: absolute;
+	top:0;
+	left:0;
+}
+
+#legenda p {
+	margin-left:20px;
+}
+
+.porcentagem {
+    font: 2px Helvetica, Arial, sans-serif;
+}
+</style>
+
+</head>
+<body>
+
+<div id="legenda">
+    <img src="img/legenda1turno.png">
+    <p><a href="eleicoes2turno.html">Ver 2o turno</a></p>
+</div>
+
+<div id="map">
+</div>
+
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/topojson.v1.min.js"></script>
+
+<script type="text/javascript">
+arquivojson="json/eleicoes2014turno1.json";
+var width = window.innerWidth, height = width/2;
+</script>
+<script src="js/eleicoes.js"></script>
+<script src="js/mapa2d-brasil.js"></script>
+
+</body>
+</html>
